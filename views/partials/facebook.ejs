@@ -1,0 +1,20 @@
+ 
+         <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+                <div class="well">
+                    <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+
+                    <!-- check if the user has this token (is the user authenticated with this social account) -->
+                
+                        <p>
+                            <strong>id</strong>: <%= user.facebook.id %><br>
+                            <strong>token</strong>: <%= user.facebook.token %><br>
+                            <strong>email</strong>: <%= user.facebook.email %><br>
+                            <strong>name</strong>: <%= user.facebook.name %><br>
+                            <strong>picture</strong>: <img src="<%= user.facebook.picture %>" style="border-radius:100%"/><br>
+                            <strong>name</strong>: <a href="<%= user.facebook.friendlist %>">Tag friends</a><br>
+                        </p>
+                </div>
+            
+        </div>
+        <div class="col-sm-4"></div>
